@@ -35,3 +35,8 @@ Run the code with python main.py
 ## Reflection:
 ### The hardest part was inputing the sound file into the code. I had spent significant amount of time learning about pygame and getting the alarm sound to work. I referred to tutorials onilne to learn about pygame to add the sound file. 
 ### If I had two more weeks i would have made use of APIs to fetch real time data instead of hard coded values for experimentation.
+
+### Credits:
+Links: 
+1. https://www.youtube.com/watch?v=wum8cJkSvv8 (Howto Sound wave file)
+2. https://pixabay.com/  (Fire Alarm sound)

@@ -25,7 +25,8 @@ print("=" * 50)
 print("SMART FIRE DETECTION SYSTEM")
 print("=" * 50)
 
-# Sorting demonstration
+# Alarm rings
+Fire_alarm.start_alarm()           
 print("\nDetectors Sorted By Smoke Level:")
 
 sorted_detectors = Fire_alarm.sort_detectors(detectors)
@@ -33,7 +34,7 @@ sorted_detectors = Fire_alarm.sort_detectors(detectors)
 for detector in sorted_detectors:
     print(f"{detector.location} --> "f"{detector.smoke_level}")
 
-# Searching demonstration
+
 location = input("\nEnter detector location: ")
 
 detector = Fire_alarm.search_detector(
@@ -49,14 +50,13 @@ if detector is None:
 
 print(f"\n✅ Detector Found: "f"{detector.location}")
 
-# Alarm rings for 3 seconds
+
 print("\n🚨 FIRE ALARM ACTIVATED 🚨")
 
-Fire_alarm.start_alarm()
 time.sleep(3)
 Fire_alarm.stop_alarm()
 
-# Recursion demonstration
+# If fire real alerts Emergency services and continues ringing, if not force stops. 
 detector.smoke_level = Fire_alarm.get_smoke_level()
 if detector.is_fire():
     print("\n🔥 FIRE CONFIRMED 🔥")
